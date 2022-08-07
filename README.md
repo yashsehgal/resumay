@@ -1,4 +1,5 @@
-# React TailwindCSS Configured Template
+# resumay
 
-- Use it ,enjoy you life.
-- Build amazing and beautiful things with react and tailwindcss.
+A clean and static page resume generator made using React and TailwindCSS
+
+coming soon, under development
