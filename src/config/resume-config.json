@@ -1,0 +1,67 @@
+[
+  {
+    "personalDetails": {
+      "name": {
+        "firstName": "",
+        "lastName": ""
+      },
+      "age": "",
+      "location": {
+        "city": "",
+        "state": "",
+        "country": ""
+      },
+      "contacts": {
+        "email": "",
+        "phoneNumber": "",
+        "twitter": "",
+        "instagram": "",
+        "linkedin": "",
+        "website": "",
+        "github": "",
+        "dribble": "",
+        "behance": "",
+        "facebook": "",
+        "other": []
+      }
+    },
+    "education": [
+      {
+        "courseName": "",
+        "organization": "",
+        "link": "",
+        "duration": {
+          "startDate": "",
+          "endDate": ""
+        }
+      }
+    ],
+    "skills": {
+      "languages": [],
+      "libraries": [],
+      "tools": [],
+      "platforms": [],
+      "otherSkills": []
+    },
+    "experience": [
+      {
+        "companyName": "",
+        "roleName": "",
+        "link": "",
+        "description": [],
+        "duration": {
+          "startDate": "",
+          "endDate": ""
+        }
+      }
+    ],
+    "projects": [
+      {
+        "projectName": "",
+        "projectURL": "",
+        "projectDescription": [],
+        "techStack": []
+      }
+    ]
+  }
+]
