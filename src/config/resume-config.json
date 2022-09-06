@@ -2,8 +2,8 @@
   {
     "personalDetails": {
       "name": {
-        "firstName": "",
-        "lastName": ""
+        "firstName": "Yash",
+        "lastName": "Sehgal"
       },
       "age": "",
       "location": {
@@ -22,7 +22,12 @@
         "dribble": "",
         "behance": "",
         "facebook": "",
-        "other": []
+        "other": [
+          {
+            "title": "",
+            "url": ""
+          }
+        ]
       }
     },
     "education": [
