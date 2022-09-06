@@ -47,6 +47,7 @@ export default function ResumeLayout({ data }) {
       <PersonalDetailsWrapper 
         firstName={resumeLayoutResponse.current?.personalDetails?.name?.firstName}
         lastName={resumeLayoutResponse.current?.personalDetails?.name?.lastName}
+        location={resumeLayoutResponse.current?.personalDetails?.location}
       />
     </div>
   )
