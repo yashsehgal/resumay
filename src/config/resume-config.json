@@ -5,7 +5,6 @@
         "firstName": "Yash",
         "lastName": "Sehgal"
       },
-      "age": "",
       "location": {
         "city": "Indore",
         "state": "M.P.",
@@ -14,18 +13,42 @@
       "contacts": {
         "email": "",
         "phoneNumber": "",
-        "twitter": "",
-        "instagram": "",
-        "linkedin": "",
-        "website": "",
-        "github": "",
-        "dribble": "",
-        "behance": "",
-        "facebook": "",
+        "twitter": {
+          "username": "",
+          "link": ""
+        },
+        "instagram": {
+          "username": "",
+          "link": ""
+        },
+        "linkedin": {
+          "username": "",
+          "link": ""
+        },
+        "website": {
+          "username": "",
+          "link": ""
+        },
+        "github": {
+          "username": "",
+          "link": ""
+        },
+        "dribble": {
+          "username": "",
+          "link": ""
+        },
+        "behance": {
+          "username": "",
+          "link": ""
+        },
+        "facebook": {
+          "username": "",
+          "link": ""
+        },
         "other": [
           {
             "title": "",
-            "url": ""
+            "url": ""            
           }
         ]
       }

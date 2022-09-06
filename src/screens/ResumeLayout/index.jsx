@@ -10,7 +10,6 @@ export default function ResumeLayout({ data }) {
         firstName: data?.personalDetails?.name?.firstName,
         lastName: data?.personalDetails?.name?.lastName
       },
-      age: data?.personalDetails?.age,
       location: {
         city: data?.personalDetails?.location?.city,
         state: data?.personalDetails?.location?.state,
