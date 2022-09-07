@@ -1,5 +1,5 @@
-import { useRef } from "react";
-import { FaBehance, FaDribbble, FaEnvelope, FaFacebook, FaGithub, FaGlobe, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import React, { useRef } from "react";
+import { FaBehance, FaDribbble, FaEnvelope, FaFacebook, FaGithub, FaGlobe, FaInstagram, FaLink, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { contactDetailItemWrapperStyle } from "../../styles/base";
 
 export default function ContactDetails({ contactData }) {
@@ -105,6 +105,26 @@ export default function ContactDetails({ contactData }) {
             </span>
           </span>
         </a>
+      }
+      {contactDataRef.current?.other && 
+        contactDataRef.current?.other?.map((otherContact, otherContactIndex) => {
+          if (otherContact?.url) {
+            return (
+              <React.Fragment key={otherContactIndex}>
+                <a href={otherContact?.url} target="_blank" rel="noreferrer">
+                  <span className={contactDetailItemWrapperStyle}>
+                    <FaLink />
+                    <span className={"contact-detail-" + otherContact?.title.toLowerCase()}>
+                      {otherContact?.title || "Link"}
+                    </span>
+                  </span>
+                </a>
+              </React.Fragment>
+            )
+          } else {
+            return <React.Fragment></React.Fragment>
+          }
+        })
       }
     </div>
   )
