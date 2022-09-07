@@ -1,11 +1,11 @@
 import { useRef } from "react";
-import { FaEnvelope, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaBehance, FaDribbble, FaEnvelope, FaFacebook, FaGithub, FaGlobe, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 import { contactDetailItemWrapperStyle } from "../../styles/base";
 
 export default function ContactDetails({ contactData }) {
   const contactDataRef = useRef(contactData);
   return (
-    <div className="contact-details-template-wrapper w-full h-fit grid grid-cols-3 items-center justify-start gap-2">
+    <div className="contact-details-template-wrapper grid grid-cols-4 gap-2 items-center justify-start mt-3">
       {contactDataRef.current?.email && 
         <a href={`mailto:${contactDataRef.current?.email}`} target="_blank" rel="noreferrer">
           <span className={contactDetailItemWrapperStyle}>
@@ -41,7 +41,7 @@ export default function ContactDetails({ contactData }) {
           <span className={contactDetailItemWrapperStyle}>
             <FaInstagram />
             <span className="contact-detail-instagram">
-              {contactDataRef.current?.instagram?.username}
+              {contactDataRef.current?.instagram?.username || "instagram"}
             </span>
           </span>
         </a>
@@ -51,7 +51,57 @@ export default function ContactDetails({ contactData }) {
           <span className={contactDetailItemWrapperStyle}>
             <FaLinkedin />
             <span className="contact-detail-linkedin">
-              {contactDataRef.current?.linkedin?.username}
+              {contactDataRef.current?.linkedin?.username || "linkedin"}
+            </span>
+          </span>
+        </a>
+      }
+      {contactDataRef.current?.website && contactDataRef.current?.website?.link &&
+        <a href={contactDataRef.current?.website?.link} target="_blank" rel="noreferrer">
+          <span className={contactDetailItemWrapperStyle}>
+            <FaGlobe />
+            <span className="contact-detail-website">
+              {contactDataRef.current?.website?.title || "website"}
+            </span>
+          </span>
+        </a>
+      }
+      {contactDataRef.current?.github && contactDataRef.current?.github?.link &&
+        <a href={contactDataRef.current?.github?.link} target="_blank" rel="noreferrer">
+          <span className={contactDetailItemWrapperStyle}>
+            <FaGithub />
+            <span className="contact-detail-github">
+              {contactDataRef.current?.github?.username || "github"}
+            </span>
+          </span>
+        </a>
+      } 
+      {contactDataRef.current?.dribble && contactDataRef.current?.dribble.link &&
+        <a href={contactDataRef.current?.dribble.link} target="_blank" rel="noreferrer">
+          <span className={contactDetailItemWrapperStyle}>
+            <FaDribbble />
+            <span className="contact-detail-dribble">
+              {contactDataRef.current?.dribble?.username || "dribble"}
+            </span>
+          </span>
+        </a>
+      }
+      {contactDataRef.current?.behance && contactDataRef.current?.behance?.link &&
+        <a href={contactDataRef.current?.behance?.link} target="_blank" rel="noreferrer">
+          <span className={contactDetailItemWrapperStyle}>
+            <FaBehance />
+            <span className="contact-detail-behance">
+              {contactDataRef.current?.behance?.username || "behance"}
+            </span>
+          </span>
+        </a>
+      }
+      {contactDataRef.current?.facebook && contactDataRef.current?.facebook?.link &&
+        <a href={contactDataRef.current?.facebook?.link} target="_blank" rel="noreferrer">
+          <span className={contactDetailItemWrapperStyle}>
+            <FaFacebook />
+            <span className="contact-detail-facebook">
+              {contactDataRef.current?.facebook?.username || "facebook"}
             </span>
           </span>
         </a>
