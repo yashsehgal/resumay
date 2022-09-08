@@ -13,7 +13,7 @@ export default function PersonalDetailsWrapper({
             {firstName} {lastName}
           </h1>
         </span>
-        <span className="location text-xs font-normal text-gray-300 flex flex-row items-center justify-end gap-0.5">
+        <span className="location text-xs font-normal text-gray-500 flex flex-row items-center justify-end gap-0.5">
           <FaLocationArrow />
           <span className="location-city">{location?.city}</span> {" "}
           <span className="location-state">({location?.state})</span>

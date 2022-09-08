@@ -122,7 +122,7 @@ export default function ContactDetails({ contactData }) {
               </React.Fragment>
             )
           } else {
-            return <React.Fragment></React.Fragment>
+            return <React.Fragment key={otherContactIndex}></React.Fragment>
           }
         })
       }

@@ -55,12 +55,12 @@
     },
     "education": [
       {
-        "courseName": "",
-        "organization": "",
-        "link": "",
+        "courseName": "Bachelors in Computer Science & Engineering",
+        "organization": "Medicaps University",
+        "link": "https://medicaps.ac.in",
         "duration": {
-          "startDate": "",
-          "endDate": ""
+          "startDate": "Sept 2020",
+          "endDate": "current"
         }
       }
     ],

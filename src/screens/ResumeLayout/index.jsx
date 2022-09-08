@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { resumeContentWrapperStyle } from "../../styles/base";
+import EducationDetailsWrapper from "./EducationDetailsWrapper";
 import PersonalDetailsWrapper from "./PersonalDetailsWrapper";
 
 export default function ResumeLayout({ data }) {
@@ -49,6 +50,12 @@ export default function ResumeLayout({ data }) {
         location={resumeLayoutResponse.current?.personalDetails?.location}
         contacts={resumeLayoutResponse.current?.personalDetails?.contacts}
       />
+      <EducationDetailsWrapper 
+        educationData={resumeLayoutResponse.current?.education}
+      />
+      <div className="watermark-container text-center mt-6 text-xs opacity-60">
+        Powered by love and <span className="text-blue-500">resumay</span>
+      </div>
     </div>
   )
 }
