@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { resumeContentWrapperStyle } from "../../styles/base";
 import EducationDetailsWrapper from "./EducationDetailsWrapper";
 import PersonalDetailsWrapper from "./PersonalDetailsWrapper";
+import SkillsDetailsWrapper from "./SkillsDetailsWrapper";
 
 export default function ResumeLayout({ data }) {
   const resumeLayoutResponse = useRef({
@@ -32,11 +33,11 @@ export default function ResumeLayout({ data }) {
     },
     education: data?.education,
     skills: {
-      languages: data?.personalDetails?.skills?.languages,
-      libraries: data?.personalDetails?.skills?.libraries,
-      tools: data?.personalDetails?.skills?.tools,
-      platforms: data?.personalDetails?.skills?.platforms,
-      otherSkills: data?.personalDetails?.skills?.otherSkills
+      languages: data?.skills?.languages,
+      libraries: data?.skills?.libraries,
+      tools: data?.skills?.tools,
+      platforms: data?.skills?.platforms,
+      otherSkills: data?.skills?.otherSkills
     },
     experience: data?.experience,
     projects: data?.projects
@@ -53,7 +54,10 @@ export default function ResumeLayout({ data }) {
       <EducationDetailsWrapper 
         educationData={resumeLayoutResponse.current?.education}
       />
-      <div className="watermark-container text-center mt-6 text-xs opacity-60">
+      <SkillsDetailsWrapper 
+        skillsData={resumeLayoutResponse.current?.skills}
+      />
+      <div className="watermark-container text-center mt-6 text-xs opacity-60 select-none">
         Powered by love and <span className="text-blue-500">resumay</span>
       </div>
     </div>

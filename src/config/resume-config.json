@@ -65,7 +65,7 @@
       }
     ],
     "skills": {
-      "languages": [],
+      "languages": ["JavaScript", "TypeScript", "Python", "C++", "HTML", "CSS"],
       "libraries": [],
       "tools": [],
       "platforms": [],
